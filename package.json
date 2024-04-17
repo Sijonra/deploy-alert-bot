@@ -1,0 +1,22 @@
+{
+  "name": "deploy-alert-bot",
+  "version": "1.0.0",
+  "description": "simple discord alerts",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sijonra/deploy-alert-bot.git"
+  },
+  "author": "Ilya Davydenko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sijonra/deploy-alert-bot/issues"
+  },
+  "homepage": "https://github.com/Sijonra/deploy-alert-bot#readme",
+  "dependencies": {
+    "discord.js": "^14.14.1"
+  }
+}
