@@ -22,7 +22,7 @@ function sendMessageProcces(message, channelId) {
   }
 }
 
-function sendMessage(message, channelId, BOT_TOKEN) {
+export function sendMessage(message, channelId, BOT_TOKEN) {
   client.login(BOT_TOKEN);
 
   client.once("ready", () => {
@@ -31,5 +31,3 @@ function sendMessage(message, channelId, BOT_TOKEN) {
     sendMessageProcces(message, channelId);
   });
 }
-
-module.exports = { sendMessage };

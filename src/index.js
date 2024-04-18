@@ -1,4 +1,3 @@
-const { sendMessage } = require("./bot.js");
-const { config } = require("../creds");
+import { sendMessage } from "./bot";
 
-module.exports = { sendMessage };
+export { sendMessage };
