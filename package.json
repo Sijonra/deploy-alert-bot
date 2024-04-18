@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "simple discord alerts",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "test",
     "start": "node ./src/index.js"
