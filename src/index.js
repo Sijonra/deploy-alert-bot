@@ -1,4 +1,4 @@
-// import { config } from "../.creds.mjs";
+// import { config } from "../creds.mjs";
 import { sendMessage } from "./bot.js";
 
 // const test = async () => {
