@@ -33,19 +33,10 @@ async function sendMessageProcess(message, channelId) {
 export async function sendMessage(message, channelId, BOT_TOKEN) {
   await client.login(BOT_TOKEN);
 
-  return new Promise((resolve, reject) => {
-    client.once("ready", async () => {
-      console.log("Bot is ready");
-
-      try {
-        await sendMessageProcess(message, channelId);
-        resolve();
-        process.exit();
-      } catch (error) {
-        console.error("Error sending deployment message:", error);
-        reject(error);
-        process.exit(1);
-      }
-    });
-  });
+  try {
+    await sendMessageProcess(message, channelId);
+  } catch (error) {
+    console.error("Error sending deployment message:", error);
+    throw error;
+  }
 }
